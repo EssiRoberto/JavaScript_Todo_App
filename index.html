@@ -16,12 +16,12 @@
 <script>
     const input = document.getElementById("todo-input");
     const btn = document.getElementById("add-btn");
-    const todolist = document.getElementById("todo-list");
+    const list = document.getElementById("todo-list");
     btn.addEventListener("click", function() {
-        input.value = input.value.trim();
+        input.text = input.value.trim();
         const li = document.createElement("li");
         li.textContent = input.value;
-        todolist.appendChild(li);
+        list.appendChild(li);
         input.value = "";
     });
 </script>
