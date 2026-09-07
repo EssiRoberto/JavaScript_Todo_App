@@ -12,18 +12,17 @@
         <button id="add-btn">Add Task</button>
         <ul id="todo-list"></ul>
     </main>
-</body>
-<script>
-    const input = document.getElementById("todo-input");
-    const btn = document.getElementById("add-btn");
-    const list = document.getElementById("todo-list");
-    btn.addEventListener("click", function() {
+    <script>
+        const input = document.getElementById("todo-input");
+        const btn = document.getElementById("add-btn");
+        const list = document.getElementById("todo-list");
+        btn.addEventListener("click", function() {
         const text = input.value.trim();
         const li = document.createElement("li");
         li.textContent = text;
         list.appendChild(li);
         input.value = "";
-    });
-</script>
+        });
+    </script>
 </body>
 </html>
