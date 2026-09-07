@@ -18,11 +18,12 @@
     const btn = document.getElementById("add-btn");
     const list = document.getElementById("todo-list");
     btn.addEventListener("click", function() {
-        input.text = input.value.trim();
+        const text = input.value.trim();
         const li = document.createElement("li");
-        li.textContent = input.value;
+        li.textContent = text;
         list.appendChild(li);
         input.value = "";
     });
 </script>
+</body>
 </html>
