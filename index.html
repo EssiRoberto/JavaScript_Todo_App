@@ -16,9 +16,9 @@
         const input = document.getElementById("todo-input");
         const btn = document.getElementById("add-btn");
         const list = document.getElementById("todo-list");
-        
+
         btn.addEventListener("click", function() {
-        const text = input.value.trim();
+        const taskText = input.value.trim();
         if (taskText !== "") {
             const li = document.createElement("li");
             li.textContent = taskText;
